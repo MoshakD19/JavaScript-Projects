@@ -9,6 +9,14 @@ function add() {
     let plus = parseInt(amount);
     num = num + plus;
     document.getElementById('number').innerHTML = num;
+
+    if (num % 3 == 0) {
+        document.getElementById('number').style.color = "red";
+    } else if (num % 2 == 0) {
+        document.getElementById('number').style.color = "green";
+    } else {
+        document.getElementById('number').style.color = "blue";
+    }
 }
 
 function subtract() {
