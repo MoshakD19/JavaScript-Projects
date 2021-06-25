@@ -1,15 +1,20 @@
 // Variables
 var num = 0;
+var amount = 0;
 var counter;
 
 // Counters
 function add() {
-    num++;
+    amount = document.getElementById('amount').value;
+    let plus = parseInt(amount);
+    num = num + plus;
     document.getElementById('number').innerHTML = num;
 }
 
 function subtract() {
-    num--;
+    amount = document.getElementById('amount').value;
+    let minus = parseInt(amount);
+    num = num - minus;
     document.getElementById('number').innerHTML = num;
 }
 
