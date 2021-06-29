@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+
+        <title>JavaScript CheckList</title>
     </head>
+
     <body>
+        <h1 class="header">JavaScript CheckList</h1>
+
+        <div class="add-item">
+            <label for="add">Add Item:</label>
+            <input type="text" id="add" name="add"><br><br>
+
+            <button type="button" name="button" onclick="addItem()">Add</button>
+        </div>
+        <br>
+        <br>
+
+        <div class="grid-container" id="checkList">
+                <p class="item">text</p>
+        </div>
 
     </body>
+
 </html>

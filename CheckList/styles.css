@@ -1,0 +1,24 @@
+.header {
+    text-align: center;
+}
+
+.add-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button {
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-row-gap: 20px;
+    grid-template-columns: 400px;
+    place-items: center;
+    justify-content: center;
+}
+
+.grid-item {
+    text-align: center;
+}
