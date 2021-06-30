@@ -14,11 +14,12 @@
 .grid-container {
     display: inline-grid;
     grid-row-gap: 20px;
-    grid-template-columns: 400px;
+    grid-template-columns: 100vw;
     place-items: center;
     justify-content: center;
 }
 
 .grid-item {
     text-align: center;
+    font-size: 25px;
 }
