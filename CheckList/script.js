@@ -4,6 +4,11 @@ function addItem() {
     // Retrive Data
     var data = document.getElementById('add').value;
 
+    if (data == "") {
+        noInputAlert();
+        return;
+    }
+
     // Create new Item
     var tag = document.createElement("p"); // <p></p>
     tag.setAttribute('id', num);
@@ -49,4 +54,12 @@ function removeItem(id) {
     var temp = id - 2;
     var element = document.getElementById(temp);
     element.remove();
+}
+
+function resetList() {
+    document.getElementById('checkList').innerHTML = "";
+}
+
+function noInputAlert() {
+    alert("Enter an Item!");
 }

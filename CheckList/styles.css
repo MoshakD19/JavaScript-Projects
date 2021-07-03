@@ -44,6 +44,38 @@ body {
     font-size: 16px;
 }
 
+.reset-button {
+    background-color: #DC143C; /* Crimson */
+    border: none;
+    border-radius: 30%;
+
+
+
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.reset-button:hover {
+    background-color: #DC143C; /* Crimson */
+    border: none;
+    border-radius: 30%;
+
+
+
+    color: white;
+    padding: 7px 12px;
+    text-align: center;
+
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 .grid-container {
     display: inline-grid;
     grid-row-gap: 20px;
