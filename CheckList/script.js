@@ -35,6 +35,7 @@ function getPlus() {
     img.setAttribute('src', 'images/plus.svg');
     img.setAttribute('height', '25px;');
     img.setAttribute('width', '25px;');
+    img.setAttribute('onclick', 'editItem(this.id)');
     return img;
 }
 
@@ -54,6 +55,12 @@ function removeItem(id) {
     var temp = id - 2;
     var element = document.getElementById(temp);
     element.remove();
+}
+
+function editItem(id) {
+    var temp = id - 1;
+    var element = document.getElementById(temp);
+    element.setAttribute('contenteditable', 'true');
 }
 
 function resetList() {
