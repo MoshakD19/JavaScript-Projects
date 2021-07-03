@@ -46,6 +46,7 @@ function getRemove() {
 }
 
 function removeItem(id) {
-    var element = document.getElementById(id);
-    element.parentNode.removeChild(id);
+    var temp = id - 2;
+    var element = document.getElementById(temp);
+    element.remove();
 }
