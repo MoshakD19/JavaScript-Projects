@@ -79,7 +79,7 @@ body {
 .grid-container {
     display: inline-grid;
     grid-row-gap: 20px;
-    grid-template-columns: 100vw;
+    grid-template-columns: 33vw 33vw 33vw;
     place-items: center;
     justify-content: center;
 }

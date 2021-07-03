@@ -12,19 +12,20 @@ function addItem() {
     // Create new Item
     var tag = document.createElement("p"); // <p></p>
     tag.setAttribute('id', num);
+    tag.setAttribute('contenteditable', 'false');
     num++;
 
     var text = document.createTextNode(data);
     tag.appendChild(text); // <p>Data</p>
-    tag.appendChild(getPlus());
-    tag.appendChild(getRemove());
 
     // Add CSS
     tag.classList.add("grid-item");
 
     // Add item to list
     var element = document.getElementById("checkList");
+    element.appendChild(getPlus());
     element.appendChild(tag); // <body> <p>TEST TEXT</p> </body>
+    element.appendChild(getRemove());
 }
 
 function getPlus() {
@@ -52,15 +53,27 @@ function getRemove() {
 }
 
 function removeItem(id) {
-    var temp = id - 2;
-    var element = document.getElementById(temp);
-    element.remove();
+    // Remove Text
+    document.getElementById(id - 2).remove();
+
+    // Remove edit button
+    document.getElementById(id - 1).remove();
+
+    // Remove this button
+    document.getElementById(id).remove();
+
 }
 
 function editItem(id) {
-    var temp = id - 1;
-    var element = document.getElementById(temp);
-    element.setAttribute('contenteditable', 'true');
+    var element = document.getElementById(id - 1);
+
+    if (element.getAttribute("contenteditable") == "false") {
+        element.setAttribute('contenteditable', 'true');
+        // element.contenteditable = true;
+    } else {
+        element.setAttribute('contenteditable', 'false');
+        // element.contenteditable = false;
+    }
 }
 
 function resetList() {
