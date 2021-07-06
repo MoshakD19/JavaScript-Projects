@@ -1,0 +1,41 @@
+.calculator {
+    /* Position */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Box */
+    width: 400px;
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 5%;
+    background-color: lightgrey;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+
+    /* Text */
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.calculator-button {
+    border: 1px solid grey;
+    width:70px;
+}
+
+
+.calculator-screen {
+    grid-column: 1 / 5;
+    background-color: white;
+    text-align: right;
+    border: 1px solid grey;
+
+
+}
