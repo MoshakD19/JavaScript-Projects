@@ -30,6 +30,10 @@
     width:70px;
 }
 
+.calculator-button:hover {
+    background-color: blue;
+}
+
 
 .calculator-screen {
     grid-column: 1 / 5;
@@ -38,4 +42,12 @@
     border: 1px solid grey;
 
 
+}
+
+.calculator-number {
+    background-color: white;
+}
+
+.calculator-operator {
+    background-color: yellow;
 }
