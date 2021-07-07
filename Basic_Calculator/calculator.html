@@ -16,32 +16,32 @@
     <body>
         <div class="calculator">
             <!-- Calculator Screen -->
-            <p class="calculator-screen" id="screen"></p>
+            <p class="calculator-screen" id="screen">0</p>
 
             <!-- First Row -->
-            <p class="calculator-button calculator-number" id="7" onclick="">7</p>
-            <p class="calculator-button calculator-number" id="8">8</p>
-            <p class="calculator-button calculator-number" id="9">9</p>
-            <p class="calculator-button calculator-operator" id="divide">&#247</p>
+            <p class="calculator-button calculator-number" id="7" onclick="main(this.id)">7</p>
+            <p class="calculator-button calculator-number" id="8" onclick="main(this.id)">8</p>
+            <p class="calculator-button calculator-number" id="9" onclick="main(this.id)">9</p>
+            <p class="calculator-button calculator-operator" id="divide" onclick="divide()">÷</p>
 
             <!-- Second Row -->
-            <p class="calculator-button calculator-number" id="4">4</p>
-            <p class="calculator-button calculator-number" id="5">5</p>
-            <p class="calculator-button calculator-number" id="6">6</p>
-            <p class="calculator-button calculator-operator" id="multiply">x</p>
+            <p class="calculator-button calculator-number" id="4" onclick="main(this.id)">4</p>
+            <p class="calculator-button calculator-number" id="5" onclick="main(this.id)">5</p>
+            <p class="calculator-button calculator-number" id="6" onclick="main(this.id)">6</p>
+            <p class="calculator-button calculator-operator" id="multiply" onclick="multiply()">x</p>
 
 
             <!-- Third Row -->
-            <p class="calculator-button calculator-number" id="3">3</p>
-            <p class="calculator-button calculator-number" id="2">2</p>
-            <p class="calculator-button calculator-number" id="1">1</p>
-            <p class="calculator-button calculator-operator" id="subtract">-</p>
+            <p class="calculator-button calculator-number" id="3" onclick="main(this.id)">3</p>
+            <p class="calculator-button calculator-number" id="2" onclick="main(this.id)">2</p>
+            <p class="calculator-button calculator-number" id="1" onclick="main(this.id)">1</p>
+            <p class="calculator-button calculator-operator" id="subtract" onclick="subtract()">-</p>
 
 
             <!-- Fourth Row -->
-            <p class="calculator-button calculator-number" id="0">0</p>
-            <p class="calculator-button" id="clear">C</p>
-            <p class="calculator-button calculator-operator" id="equals">=</p>
+            <p class="calculator-button calculator-number" id="0" onclick="main(this.id)">0</p>
+            <p class="calculator-button" id="clear" onclick="allClear()">C</p>
+            <p class="calculator-button calculator-operator" id="equals" onclick="equals()">=</p>
             <p class="calculator-button calculator-operator" id="plus" onclick="plus()">+</p>
         </div>
 
