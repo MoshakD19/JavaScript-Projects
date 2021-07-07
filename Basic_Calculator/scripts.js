@@ -21,19 +21,47 @@ function main(id) {
 
 
 function plus() {
-    array[array.length] = "+";
+    if (array.length == 1) {
+        array[1] = "+";
+    } else if (array.length == 3) {
+        equals();
+        array.length = 0;
+        array[0] = document.getElementById('screen').innerHTML;
+        array[1] = "+";
+    }
 }
 
 function subtract() {
-    array[array.length] = "-";
+    if (array.length == 1) {
+        array[1] = "-";
+    } else if (array.length == 3) {
+        equals();
+        array.length = 0;
+        array[0] = document.getElementById('screen').innerHTML;
+        array[1] = "-";
+    }
 }
 
 function multiply() {
-    array[array.length] = "x";
+    if (array.length == 1) {
+        array[1] = "x";
+    } else if (array.length == 3) {
+        equals();
+        array.length = 0;
+        array[0] = document.getElementById('screen').innerHTML;
+        array[1] = "x";
+    }
 }
 
 function divide() {
-    array[array.length] = "/";
+    if (array.length == 1) {
+        array[1] = "/";
+    } else if (array.length == 3) {
+        equals();
+        array.length = 0;
+        array[0] = document.getElementById('screen').innerHTML;
+        array[1] = "/";
+    }
 }
 
 function equals() {
